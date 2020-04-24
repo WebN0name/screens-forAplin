@@ -65,3 +65,215 @@ body, a{
     width: 111px;
     height: 37px;
 }
+
+.wrap-screen{
+    width: 363px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.close-btn{
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(45deg);
+    float: right;
+    z-index: 10;
+}
+
+.close-btn a{
+    line-height: 35px;
+    background: radial-gradient(rgb(255, 255, 255) 7% , #696969 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+}
+
+.wrap-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: safe center;
+    padding-top: 16px;
+}
+
+.steps{
+    display: flex;
+}
+
+.steps .step + .step {
+    margin-left: 25px;
+}
+
+.step{
+    width: 15px;
+    height: 15px;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.complete-step{
+    background: #7A14B0;
+}
+
+.step-value {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 17px;
+}
+
+.step-description{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 19px;
+}
+
+.resource-image{
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.grid-resource {
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.resource{
+    display: flex;
+    flex-direction: column;
+    align-items: safe center;
+    margin-bottom: 23px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.resource-image-gradient{
+    border: 3px solid transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top, #09329E,#7A14B0);
+}
+
+.resource-description{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.margin-left{
+    margin-left: 8px;
+}
+
+.next-first-step-btn{
+    margin-top: 49px;
+    margin-bottom: 110px;
+    width: 161px;
+}
+
+.container-btn-list{
+    margin-top: 32px;
+}
+
+.container-btn-list .btn + .btn {
+    margin-top: 21px;
+}
+
+.second-step-btn{
+    width: 206px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    height: 41px;
+}
+
+.second-step-btn a{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.btn-border-gradient{
+    border: 3px solid transparent;
+    background-image: linear-gradient(white, white), radial-gradient(ellipse at 50% 0%, #09329E 0%,#7A14B0 100%);
+}
+
+.second-step-btn-block{
+    width: 298px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+    height: 41px;
+    margin-bottom: 52px;
+}
+
+.screen-controll-btn{
+    width: 138px;
+}
+
+.screen-controll-btn a{
+    line-height: 21px;
+    font-size: 18px;
+}
+
+.third-step-btn-block{
+    width: 298px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+    height: 41px;
+    margin-bottom: 82px;
+}
+
+.checkbox-container{
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-container .fourth-step-checkbox + .fourth-step-checkbox{
+    margin-top: 14px;
+}
+
+
+.checkbox{
+    display: none;
+}
+
+
+.fourth-step-lable::before{
+    font-family: 'FontAwesome';
+    content: " ";
+    width: 31px;
+    height: 31px;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    margin-right: 9px;
+    text-align: center;
+    font-size: 27px;
+    background: linear-gradient(180deg, #09329E 25%, #7A14B0 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.checkbox:checked + .fourth-step-lable:before {
+    content: "\f00c";
+}
+
+.fourth-step-btn-block{
+    width: 298px;
+    display: flex;
+    justify-content: space-between;
+    height: 41px;
+    margin-top: 64px;
+    margin-bottom: 98px;
+}
+
