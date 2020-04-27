@@ -708,10 +708,11 @@ body, a{
 }
 
 .resource-icon-block{
-    width: 306px;
+    max-width: 306px;
     display: flex;
     justify-content: space-between;
     margin-top: 21px;
+    width: 100%;
 }
 
 .res-desc{
@@ -852,4 +853,74 @@ body, a{
 
 .ex-mt{
     margin-bottom: 58px;
+}
+
+@media only screen and (max-width : 320px) {
+    .wrap-extra-main{
+        max-width: 300px;
+    }
+    
+    .btn-rel{
+        left: 19px;
+        bottom: 35px;
+    }
+
+    .add-res-block{
+        max-width: 275px;
+    }
+
+    .decision-icon-block{
+        max-width: 293px;
+        width: 100%;
+    }
+
+    .adaptive{
+        left: -1px !important;
+    }
+
+    .resource-icon-block{
+        max-width: 306px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 21px;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .res-ico-1, .res-ico-2, .res-ico-3{
+        max-width: 90px;
+    }
+
+    .des-icon-1, .des-icon-2{
+        max-width: 130px;
+    }
+
+    .decision-icon-block{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .wrap-screen{
+        max-width: 300px;
+    }
+
+    .fourth-step-btn-block{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .second-step-btn-block{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .third-step-btn-block{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .resource-description{
+        font-size: 13px;
+    }
 }
